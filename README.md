@@ -16,7 +16,7 @@ OS related setup scripts can be found in `setup` folder.
 
 If you are using Mac OSX, this repo includes a script to install dependecies in this [script](setup/setup_mac.sh). 
 
-    curl -L http://git.io/3hD1Kw | sh
+    curl -L https://raw.githubusercontent.com/ahujamanish/dotfiles/master/setup/setup_mac.sh | sh
 
 This [script](setup/osx_defaults.sh) will help you add some defaults to your mac.
 
