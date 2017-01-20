@@ -38,22 +38,14 @@ brew install gnu-sed --with-default-names
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
-brew tap josegonzalez/homebrew-php
 
 # Install everything else
-brew install ack
 brew install git git-extras hub git-ftp
 brew install rename htop-osx tree ngrep mtr nmap
 brew install autojump
 brew install legit # http://www.git-legit.org/
 brew install Zopfli # https://code.google.com/p/zopfli/
-brew install fortune cowsay
-brew install heroku-toolbelt
-brew install node
 brew install ngrok # https://ngrok.com/
-brew install sshrc # https://github.com/Russell91/sshrc
-brew install pup  # https://github.com/EricChiang/pup
-brew install httpie  # https://github.com/jakubroztocil/httpie
 
 # Native apps
 brew tap phinze/homebrew-cask
@@ -67,23 +59,11 @@ function installcask() {
 }
 
 installcask google-chrome
-installcask adium
 installcask dropbox
 installcask iterm2
 installcask vlc
 installcask nvalt  # for notes
 installcask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
-
-# Postgres 9 Database
-brew install postgres
-installcask pgadmin3
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-psql postgres -c 'CREATE EXTENSION "adminpack";'
-sudo gem install pg
-
-# memcache dev
-brew install libmemcached
 
 # Fonts
 brew tap caskroom/fonts
