@@ -27,7 +27,7 @@ For other linux, checkout `apt_init.sh` file in [`setup`](setup/) folder, i have
 Once you have installed basics software and libraries, you can install the dotfililes bu, clone this repo into `~/dotfiles` and symlinking the files inside it to your home directory `~`. Symlinking helps keep all your dotfiles maintainable inside a git repo, while being functional at the same time.
 
 ```shell
-cd ~ && git clone --recursive git@github.com:theskumar/dotfiles.git && cd ~/dotfiles
+cd ~ && git clone --recursive git@github.com:ahujamanish/dotfiles.git && cd ~/dotfiles
 # To create symbolic links in your home
 sh bootstrap.sh  ## this will create the required symlinks
 pip install -r requirements.pip
