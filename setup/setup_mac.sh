@@ -61,8 +61,8 @@ function installcask() {
 installcask google-chrome
 installcask dropbox
 installcask iterm2
-installcask vlc
-installcask nvalt  # for notes
+#installcask vlc
+#installcask nvalt  # for notes
 installcask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
 
 # Fonts
